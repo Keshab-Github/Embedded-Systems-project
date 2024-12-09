@@ -10,11 +10,11 @@ The ADC0809 converts the analog signals from the sensors into digital values, wh
 ## Features
 - Real-time monitoring and display of three analog signals.
 - User-friendly interface using a 16×2 LCD.
-- Efficient analog-to-digital conversion using ADC0808.
+- Efficient analog-to-digital conversion using ADC0809.
 - Modular code structure for easy updates and enhancements.
 ## Hardware Components
-- Microcontroller: AT89C52 (8051 family)
-- Analog-to-Digital Converter (ADC): ADC0808
+- Microcontroller: AT89S52 (8051 family)
+- Analog-to-Digital Converter (ADC): ADC0809
 - LCD Display: LM016L (16×2 alphanumeric display)
 - Sensors:
   - Potentiometer for resistance
@@ -25,9 +25,10 @@ The ADC0809 converts the analog signals from the sensors into digital values, wh
 
 | Component            | 8051 Pins   | Additional Info               |
 |-----------------------|-------------|--------------------------------|
-| ADC0808              | P3.3–P3.6   | ALE, SOC, EOC, and OE         |
-| LCD (16×2)           | P2.0–P2.7   | Data pins                     |
-|                      | P3.0–P3.2   | RS, RW, E                     |
+| ADC0809              | P2.0–P2.7   | Data out pins of ADC        |
+|                      | P3.7,3.6,3.2| ALE, SOC and EOC         |
+| LCD (16×2)           | P1.0–P1.7   | Data pins                     |
+|                      | P3.3–P3.5   | E, RS, RW                     |
 | Potentiometer (IN0)  | ADC0808 IN0 | Analog input channel 0        |
 | Temperature sensor   | ADC0808 IN1 | Analog input channel 1        |
 | LDR                  | ADC0808 IN2 | Analog input channel 2        |
