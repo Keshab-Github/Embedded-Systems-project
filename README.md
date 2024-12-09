@@ -38,3 +38,5 @@ The ADC0809 converts the analog signals from the sensors into digital values, wh
 - Simulator: Proteus 8.17 (for hardware simulation)
 - Programming Language: Assembly
 
+## Circuit Diagram
+![Circuit Diagram](images/circuit_diagram.png)
